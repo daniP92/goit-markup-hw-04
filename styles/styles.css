@@ -51,7 +51,7 @@ h5 {
     #2F303A66,
     #2F303A66
   ),
-  url(/assets/main-banner.jpg)
+  url(../assets/main-banner.jpg);
 }
 
 .global-header,
@@ -176,6 +176,7 @@ h5 {
   margin-left: 330px;
   margin-top: 32px;
   height: 16px;
+  min-width: 100%;
 }
 
 .header-info-contacts a {
@@ -385,22 +386,15 @@ h5 {
   gap: 10px;
 }
 
-.icon-social-media svg:hover,
-.icon-social-media svg:focus {
-  fill: #ffffff;
-}
-
-.icon-social-media:hover,
-.icon-social-media:focus {
-  border-radius: 50%;
-  background-color: var(--blue-theme-color);
-  fill: #ffffff;
+.icon-social-media {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
 }
 
 .icon-social-media svg {
   width: 20px;
   height: 20px;
-  margin: 12px;
   fill: #AFB1B8;
 }
 
@@ -408,6 +402,21 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.icon-social-media svg:hover,
+.icon-social-media svg:focus {
+  fill: #ffffff;
+  transition: fill 0.3s ease;
+}
+
+.icon-social-media:hover,
+.icon-social-media:focus {
+  border-radius: 50%;
+  background-color: var(--blue-theme-color);
+  /* fill: #ffffff; */
+  transition: background-color 0.3s ease;
 }
 
 .regular-customers {
